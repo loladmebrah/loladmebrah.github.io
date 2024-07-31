@@ -14,13 +14,14 @@
       <div id="example" class="hot"></div>
       <script>
         const container = document.querySelector('#example');
-
+        const h1 = document.createElement('h1');
+        h1.innerText =' Hi quick start handsontable';
         const hot = new Handsontable(container, {
         data: [
-            ['', 'Tesla', 'Volvo', 'Toyota', 'Ford'],
-            ['2019', 10, 11, 12, 13],
-            ['2020', 20, 11, 14, 13],
-            ['2021', 30, 15, 12, 13]
+            ['', 'Tesla', 'Volvo', 'Toyota', 'Ford', 'BMW'],
+            ['2019', 10, 11, 12, 13, 'hi'],
+            ['2020', 20, 11, 14, 13, 15],
+            ['2021', 30, 15, 12, 13, 420]
         ],
         rowHeaders: true,
         colHeaders: true,
